@@ -1,0 +1,16 @@
+# wrangler.toml
+name = "mock-exam-app"
+compatibility_date = "2025-07-20"
+
+# This is required for Pages Functions
+[pages_build_output]
+# For a project without a build step, this is often the root directory.
+# We explicitly set functions directory to make sure it's picked up.
+functions = "functions"
+
+# D1 Database Binding
+# This tells your Pages Function how to connect to the database.
+[[d1_databases]]
+binding = "DB"                # This MUST match the name in your code (env.DB)
+database_name = "mock-exam-db" # The name you chose when creating the DB
+database_id = "eb6e0f69-2772-48d7-a63e-bbe541b6715a" # <-- 在这里粘贴您之前复制的 database_id

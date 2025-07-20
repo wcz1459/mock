@@ -21,7 +21,7 @@ const Turnstile: React.FC<{ onVerify: (token: string) => void }> = ({ onVerify }
     useEffect(() => {
         if (!ref.current) return;
         (window as any).turnstile.render(ref.current, {
-            sitekey: '0x4AAAAAAAXdE5fB4x4829fl', // Always use this test key
+            sitekey: '0x4AAAAAABil9zOFutV8OZGi', // Always use this test key
             callback: onVerify,
         });
     }, [onVerify]);
