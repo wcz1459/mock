@@ -1,0 +1,5 @@
+{
+  "name": "模拟考试程序 (Mock Exam Program)",
+  "description": "一个基于题库进行模拟考试的Web应用。用户可以开始一场包含30个随机问题的考试，并在结束后查看分数。",
+  "requestFramePermissions": []
+}
